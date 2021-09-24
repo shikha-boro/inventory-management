@@ -1,1 +1,1 @@
-# inventory-management system
+# inventory-management front end
