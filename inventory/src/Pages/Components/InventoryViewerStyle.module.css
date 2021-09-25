@@ -1,0 +1,15 @@
+table {
+  border: 1px solid black;
+}
+
+.categoryHeader {
+  background: #9e9e9e36;
+}
+
+.subCategoryHeader {
+  background: red;
+}
+
+.tableContainer {
+  margin: 10px;
+}
