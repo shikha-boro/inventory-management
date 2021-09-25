@@ -44,9 +44,12 @@
   }
 
   .saveButton {
-    border-radius: 3px;
-    background: blue;
+    border-radius: 9px;
+    background: #1565c0;
     color: white;
+    border: white;
+    height: 23px;
+    width: 49px;
   }
 
   .stocks {
