@@ -133,7 +133,6 @@ class InventoryViewer extends React.Component {
 
     let tableContainer = <></>
     tableContainer = <div>
-      <div>Inventory Builder</div>
       <div>
         {allTables}
       </div>
