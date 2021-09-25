@@ -1,13 +1,30 @@
-export default [
+export function getInventory() {
+
+  let inventory = localStorage.getItem("inventory");
+  if (inventory) {
+    return JSON.parse(inventory);
+
+  }
+  else {
+    return staticInventory;
+  }
+}
+
+export function updateInventory(inventory) {
+  localStorage.setItem("inventory", JSON.stringify(inventory));
+}
+
+
+const staticInventory = [
   {
-    category: "vegetables and Fruits",
+    category: "Vegetables and Fruits",
     subCategories: [
       {
-        subCategory: 'vegetables',
+        subCategory: 'Vegetables',
         products: [
           {
             name: "Cabbage",
-            color: "green",
+            color: "Green",
             options: "large",
             skuId: "sk1",
             stocks: {
@@ -16,10 +33,10 @@ export default [
             }
           },
           {
-            name: "Cabbage",
-            color: "green",
+            name: "Tomato",
+            color: "Red",
             options: "large",
-            skuId: "sk1",
+            skuId: "sk2",
             stocks: {
               quantity: 20,
               unlimited: false,
@@ -28,7 +45,7 @@ export default [
         ]
       },
       {
-        subCategory: 'fruits',
+        subCategory: 'Fruits',
         products: [
           {
             name: "Apple",
@@ -53,13 +70,13 @@ export default [
             name: "Brown Bread",
             color: "Brown",
             options: "small",
-            skuId: "sk2",
+            skuId: "sk3",
             stocks: {
               quantity: 20,
               unlimited: false,
             },
-            actions: "",
-            subCategory: "bread"
+
+
           },
 
         ]
